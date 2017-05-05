@@ -6,10 +6,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Desarrollo de Ejercicio guiado de la Lección 16: Programación Orientada a Objetos.">
 	<meta name="author" content="Caterina Da Silva">
-	<!--link rel="stylesheet" type="text/css" href="css/style.css"-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
+	<header>
+		<div class="container">
+			<h1>¡Práctica de Batalla Pokemón!</h1>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<form action="#" method="post">
+				<div class="contrincante">
+					<label for="select-choice">Pokémon 1</label>
+					<select name="select-choice" class="select-choice" onchange="toggle(this)">
+						<option value="" selected disabled>¡Elige un pokémon!</option>
+					</select>
+				</div>
+				<div class="vs">
+					<img src="img/vs.png" alt="VERSUS">
+				</div>
+				<div class="contrincante">
+					<label for="select-choice">Pokémon 2</label>
+					<select name="select-choice" class="select-choice" onchange="toggle(this)">
+						<option value="" selected disabled>¡Elige un pokémon!</option>
+					</select>
+				</div>
+				<div>
+					<button onclick="fight(vs)" class="btn" type="button" value="¡Fight!">¡Fight!</button>
+				</div>
+			</form>
+			<div id="arena">
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Pokedéx</h2>
+			<ul id="pokedex">
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<small>Desarrollado por <span>Caterina Da Silva</span></small>
+		</div>
+	</footer>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

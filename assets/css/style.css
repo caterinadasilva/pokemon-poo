@@ -32,9 +32,11 @@ body {
   line-height: 1;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background-color: #f9f9f9;
+  color: #485050;
 }
 ol, ul {
   list-style: none;
+  overflow: hidden;
 }
 blockquote, q {
   quotes: none;
@@ -57,24 +59,31 @@ table {
 }
 
 header {
-  background-color: #6730EC;
+  background-color: #d61212;
   color: white;
-  padding: 10em 0 2em;
+  padding: 5em 0;
   margin-bottom: 5em;
   text-align: center;
+  border-bottom: 2em solid #222224;
 }
 
 h1 {
   font-size: 3rem;
 }
 
-h3 {
-  color: #6730EC;
+h2 {
+  color: #2a75bb;
   margin: 3em 0 1em;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #2a75bb;
+  margin: 1em 0;
   font-size: 1.5rem;
 }
 
-h1, h3 {
+h1,h2, h3 {
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   font-weight: 800;
   text-align: center;
@@ -83,7 +92,6 @@ h1, h3 {
 form {
   width: 90%;
   margin: 0 auto;
-  max-width: 600px;
   padding: 0 5%;
 }
 
@@ -91,8 +99,10 @@ label {
   display: block;
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   font-weight: 800;
-  color: #6730EC;
-  margin: 1.2em 0 .5em;
+  color: #2a75bb;
+  margin: 1em 0 .5em;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 input, select {
@@ -112,16 +122,19 @@ input, select {
   font-weight: 800;
   cursor: pointer;
   color: #fff;
-  background-color: #6730EC;
+  background-color: #2a75bb;
   letter-spacing: 1px;
   font-size: 90%;
   padding: 1em .5em;
   transition: .5s ease all;
-  margin: 1.2em 0 .5em;
+  margin: 1.2em auto .5em;
+  min-width: 400px;
+  border: none;
+  
 }
 
 .btn:hover, .btn:active, .btn:focus {
-  background-color: #552cb9;
+  background-color: #3c5aa6;
   transition: .5s ease all;
 }
 
@@ -134,15 +147,12 @@ p {
 }
 
 span {
-  border-bottom: 2px #6730EC solid;
-  font-weight: 700;
+  border-bottom: 2px #2a75bb solid;
 }
 
 b {
-  font-family: 'Nunito', Helvetica, Arial, sans-serif;
-  font-weight: 800;
   font-size: 112%;
-  color: #6730EC;
+  color: #2a75bb;
 }
 
 small {
@@ -156,3 +166,37 @@ footer {
   margin: 5em 0 0;
   padding: 0 0 2em;
 }
+
+.contrincante {
+  width: 38%;
+  margin: 0 0 10em;
+  float: left;
+}
+
+.vs {
+  width: 15%;
+  float: left;
+  overflow: hidden;
+  margin: 0 4.5%;
+}
+
+.pokeCaja {
+    width: 29%;
+    float: left;
+    margin: 2%;
+}
+
+.pokeCaja img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
